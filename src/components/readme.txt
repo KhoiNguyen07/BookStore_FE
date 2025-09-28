@@ -1,0 +1,1 @@
+Thư mực components chức các components tái sử dụng có trong dự án hoặc các cấu trúc layout cần chia nhỏ. Lưu ý là nếu components đó không được tái sử dụng nhiều thì không nên chia nhỏ

@@ -1,4 +1,4 @@
-import React, {use} from "react";
+import React from "react";
 import {useRoutes} from "react-router-dom";
 import {path} from "../assets/path/path";
 import HomePage from "../pages/HomePage/HomePage";

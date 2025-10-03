@@ -2,6 +2,7 @@ import React from "react";
 import {useRoutes} from "react-router-dom";
 import {path} from "../assets/path/path";
 import HomePage from "../pages/HomePage/HomePage";
+import ProductDetail from "~/pages/ProductDetail/ProductDetail";
 
 const useRouteCustom = () => {
   const elements = useRoutes([
@@ -12,6 +13,10 @@ const useRouteCustom = () => {
     {
       path: path.Homepage,
       element: <HomePage />,
+    },
+    {
+      path: path.Product,
+      element: <ProductDetail />,
     },
   ]);
   return elements;

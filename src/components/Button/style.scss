@@ -1,0 +1,138 @@
+.btn-grad {
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background-size: 200% auto;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+
+  &:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.3);
+  }
+}
+
+// Size variants
+.btn-sm {
+  padding: 8px 20px;
+  font-size: 12px;
+
+  @media (min-width: 640px) {
+    padding: 10px 24px;
+    font-size: 13px;
+  }
+}
+
+.btn-md {
+  padding: 12px 32px;
+  font-size: 13px;
+
+  @media (min-width: 640px) {
+    padding: 15px 40px;
+    font-size: 14px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 16px 45px;
+    font-size: 15px;
+  }
+}
+
+.btn-lg {
+  padding: 16px 40px;
+  font-size: 14px;
+
+  @media (min-width: 640px) {
+    padding: 18px 48px;
+    font-size: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 20px 56px;
+    font-size: 18px;
+  }
+}
+
+// Color variants
+.btn-primary {
+  background-image: linear-gradient(
+    to right,
+    #1f1c2c 0%,
+    #928dab 51%,
+    #1f1c2c 100%
+  );
+}
+
+.btn-secondary {
+  background-image: linear-gradient(
+    to right,
+    #667eea 0%,
+    #764ba2 51%,
+    #667eea 100%
+  );
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #1f1c2c;
+  color: #1f1c2c;
+
+  &:hover {
+    background-image: linear-gradient(
+      to right,
+      #1f1c2c 0%,
+      #928dab 51%,
+      #1f1c2c 100%
+    );
+    color: white;
+    border-color: transparent;
+  }
+}
+
+.btn-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+
+  &:hover {
+    transform: none;
+    box-shadow: none;
+    background-position: left center;
+  }
+}
+
+// Responsive adjustments
+@media (max-width: 480px) {
+  .btn-grad {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .btn-grad {
+    min-width: 140px;
+  }
+}
+
+@media (min-width: 769px) {
+  .btn-grad {
+    min-width: 160px;
+  }
+}
